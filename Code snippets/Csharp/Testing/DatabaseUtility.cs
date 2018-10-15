@@ -7,14 +7,14 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cortex.Dataflow.Tests.Common.Utility
+namespace Tests.Common.Utility
 {
     public static class DatabaseUtility
     {
 
         public static void ExecuteNonQuery(
-            string connectionString, 
-            string scriptContent, 
+            string connectionString,
+            string scriptContent,
             int executionTimeoutSec = 60,
             Dictionary<string, object> parameters = null)
         {
@@ -33,7 +33,7 @@ namespace Cortex.Dataflow.Tests.Common.Utility
         }
 
         public static T ExecuteScalar<T>(
-            string connectionString, 
+            string connectionString,
             string scriptContent,
             int executionTimeoutSec = 60,
             Dictionary<string, object> parameters = null)
@@ -66,7 +66,7 @@ namespace Cortex.Dataflow.Tests.Common.Utility
         }
 
         public static DataTable ExecuteTable(
-            string connectionString, 
+            string connectionString,
             string scriptContent,
             int executionTimeoutSec = 60,
             Dictionary<string, object> parameters = null)
@@ -168,8 +168,7 @@ namespace Cortex.Dataflow.Tests.Common.Utility
 
         public static void WipeDatabase(string connectionString)
         {
-            var script = TestDataUtility.GetEmbeddedResourceContent("Cortex.Dataflow.Tests.Common.Utility.WipeDatabase.sql", Assembly.GetExecutingAssembly());
-
+            var script = TestDataUtility.GetEmbeddedResourceContent("Tests.Common.Utility.WipeDatabase.sql", Assembly.GetExecutingAssembly());
             DatabaseUtility.ExecuteNonQuery(connectionString, script, 300);
         }
     }
