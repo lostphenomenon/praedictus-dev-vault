@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace Cortex.Dataflow.Tests.Common.Utility
+namespace Tests.Common.Utility
 {
     public static class TestDataUtility
     {
