@@ -1,0 +1,1 @@
+- Watch some lectures from Dmitri Nesteruk (parallel programming)
