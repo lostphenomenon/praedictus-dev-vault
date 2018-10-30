@@ -122,3 +122,7 @@ can be executed on a thread.
             cts.Cancel();
 
     ## Waiting for TASKs
+
+        - Task.WaitAll(taskarray)
+        - Task.WaitAny(taskarray)
+        - Task.Wait()
