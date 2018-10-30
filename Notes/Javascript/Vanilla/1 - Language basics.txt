@@ -1,0 +1,15 @@
+
+    Javascript is a lightweight, cross-platform, object-oriented computer programming language
+     
+    Methods for adding javscript to a page:
+    
+        -Inline script
+            <script>
+                console.log('Hi!');
+            </script>
+        -Separate file
+            <link rel...... </link>
+
+    
+
+    
