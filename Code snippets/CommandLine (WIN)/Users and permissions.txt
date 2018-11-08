@@ -1,0 +1,6 @@
+1. Check which groups you are part of:
+
+    gpresult /r             OR          gpresult /V
+
+Source:
+https://serverfault.com/questions/111650/how-can-i-find-out-what-ad-groups-im-a-member-of
