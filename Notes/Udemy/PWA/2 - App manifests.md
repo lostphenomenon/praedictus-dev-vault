@@ -64,3 +64,17 @@ EXAMPLE:
             }
         ]
     }
+
+    # To make the app look good on iOS and Safari aswell untill they support PWAs
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="TkApp">
+    <meta name="apple-touch-icon" href="/src/images/icons/apple-icon-144x144.png" sizes="144x144">
+    ... for different sizes ...
+
+    # There are also some meta tags for IE
+
+        TODO: fetch IE tags
+
+    
