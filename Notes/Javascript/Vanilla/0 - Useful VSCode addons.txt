@@ -1,0 +1,5 @@
+# List of useful addons:
+
+  Bracked colorizer
+  Javascript ES6 Snippets
+  Live server
