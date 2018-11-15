@@ -10,6 +10,50 @@
         -Separate file
             <link rel...... </link>
 
+    Variables and declarations:
+
+        Let and const have big advantage in means of block level scope.
+
+        VAR::
+            Var and let are reassignable.
+
+                var name = 'Funky John';
+                name = "Another Name";
+
+            Initialization:
+
+                var x;
+
+            This sets the variable to undefined.
+        LET
+        CONST
+            Constants cannot be reassigned. We have to provide a value at the
+            declaration.
+
+            const name = 'Peter Petigrew'
+            console.log(name);
+
+            name = 'Jani'; will throw an error.
+
+            A tricky part is if you for example declare a const array which contains
+            objects. The objects themselves can be modified, but the reference
+            cannot be reassigned, it must point to the same object.
+
+            This also works.
+
+                const number = [1,2,3,4,5,6];
+                numbers.push(7);
+
+            This however does not!
+
+                number = [1,2,3]; --> this is a whole new entitiy, not a mutation
+            
+
+    Rules and conventions:
+
+        -Variable names can include numbers, letters, _ and $ sign.
+        -Variable names cannot start with numbers.
+
     
     
 

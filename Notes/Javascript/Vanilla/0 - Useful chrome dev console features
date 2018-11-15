@@ -1,7 +1,17 @@
 console.log({ a:1, b:2});
+
+// Prints the object out as a fancy table
 console.table({ a:1, b:2});
+
+// Prints out messages
 console.error('this is some error!');
 console.warn('this is some warning!');
-console.time('Hello!');
 
-console.timeEnd('Hello!')
+// Clear console
+console.clear();
+
+// Measure time through console between two
+// points in time. You have to provide the same 
+// identifier
+console.time('identifier');
+console.timeEnd('identifier')
