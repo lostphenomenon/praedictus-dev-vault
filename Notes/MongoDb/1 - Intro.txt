@@ -1,0 +1,33 @@
+Types of NoSQL:
+
+     1. Column Store - Cassandra
+          Primarily used for BI purposes.
+          Each column is stored in a different table
+          Selecting is fast, insert update etc is very slow.
+
+     2. Key value store - Redis
+          Like one table with 2 columns
+          In this example if you know the post id, you can get everything related.
+          Fast mapping.
+
+          Key:                             Value:
+               {PostId}.Title                "Mongo"
+               {PostId}.Text                 "RndText"
+               {PostId}.Comments             ["12313,123123,12313]
+               {PostId}.{CommentId}.Text      "Hello! It was nice!"
+
+     3. Document store - Mongo
+          Similar to a key-value store, but everything is stored in JSON, but a value can also be another document.
+
+     4. GraphStore - Neo4j
+          it only stores relations, its hard to call it noSQL because it not non-relational
+
+     5. Search Engines - Elastic Search
+          anything can be used as a database under them, they analize the data, frequency etc. via selects
+          they can be used in combination with NoSQL databases
+
+When to use them::
+
+     - When you want to use a code-first approach.
+     - In conjunction with "simple" systems. (eg. webapps etc.)
+     
