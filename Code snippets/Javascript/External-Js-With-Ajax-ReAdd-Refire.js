@@ -55,17 +55,7 @@ var bootstrapPage = new function(onSuccess) {
         function(xhr) {
             var conf = JSON.parse(xhr.responseText);
             if (conf) {
-                dealogic.usageTracking.APIV2.setup(
-                    configuration.UsageTrackingUrl,
-                    configuration.clientCode,
-                    conf.UsageTracking.UserGuid,
-                    conf.UsageTracking.ImpersonatedUserGuid,
-                    conf.UsageTracking.IsDealogicUser,
-                    'Hosted - ' + configuration.sourceName,
-                    conf.UsageTracking.EnvironmentType,
-                    'large',
-                    null,
-                    '@ViewBag.CorrelationId'
+                    DoWork()
                 );
             } else {
                 throw new Error('Could not retrieve configuration for client' + configuration.clientCode);
