@@ -93,7 +93,7 @@ if ('cwt' in window) {
                     var a = document.createElement('a');
                     a.href = url;
 
-                    var profileType = "Dealogic";
+                    var profileType = "";
                     var profileSubject = "print";
 
                     var companyName = document.getElementById('CompanyName');
@@ -107,7 +107,7 @@ if ('cwt' in window) {
                         profileType = "InvestorProfile";
                     }
 
-                    a.download = "Dealogic_" + profileType + "_" + profileSubject + ".pdf";
+                    a.download = "" + profileType + "_" + profileSubject + ".pdf";
                     a.click();
 
                     if (downloadIndicatorElement !== null) {
