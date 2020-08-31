@@ -29,3 +29,8 @@ find . -type f -name "*.log" -exec cat {} +
 # kill the process listening on the application port (sometimes it gets stuck)
 echo -e "[OK] Killing child process of dotnet because it seems to be stuck..."
 fuser -k -n tcp $applicationPort || echo "[FAIL] Couldnt stop application, either nothing is listening on $applicationPort or insufficent rights"
+
+#restart service
+# you simply can restart it by logging in as user svc_nrgs_devops@GTOFFICE.LAN and then run 
+sudo ./svc.sh start 
+# in folder /opt/svc_nrgs_devops/azagent
